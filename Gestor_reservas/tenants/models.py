@@ -22,4 +22,4 @@ class tenants(models.Model):
     )
 
     numero_documento = models.CharField(max_length=20)
-    telefono = models.IntegerField(max_length=20)   
+    telefono = models.IntegerField()   

@@ -8,7 +8,7 @@ class rentals(models.Model):
     fecha_egreso = models.DateField() #fecha de egreso de la propiedad
     hora_ingreso = models.TimeField() #hora de ingreso a la propiedad
     hora_egreso = models.TimeField() #hora de egreso de la propiedad
-    cantidad_personas = models.IntegerField(max_length=2) #cantidad de personas que se alojaran en la propiedad
+    cantidad_personas = models.IntegerField() #cantidad de personas que se alojaran en la propiedad
 
 
     estado_alquiler_opciones = [
