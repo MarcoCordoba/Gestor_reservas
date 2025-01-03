@@ -17,5 +17,10 @@ class properties(models.Model):
     precio_por_persona = models.IntegerField() #monto de dinero que se cobra por dia a cada persona que se aloje en la propiedad
 
 
+    class Meta: #es para que el nombre en el panel de admin este bien escrito 
+        verbose_name = "propertie"
+        verbose_name_plural = "properties"
 
 
+    def __str__(self): #es para que en el panel de admin se muestre el nombre de la propiedad
+        return self.nombre

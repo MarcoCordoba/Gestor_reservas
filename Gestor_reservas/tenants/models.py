@@ -23,3 +23,10 @@ class tenants(models.Model):
 
     numero_documento = models.CharField(max_length=20)
     telefono = models.IntegerField()   
+
+    class Meta: #es para que el nombre en el panel de admin este bien escrito
+        verbose_name = "tenant"
+        verbose_name_plural = "tenants"
+
+    def __str__(self):
+        return self.apellido + '' + self.nombre

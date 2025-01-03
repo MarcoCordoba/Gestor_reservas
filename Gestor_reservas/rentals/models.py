@@ -25,3 +25,11 @@ class rentals(models.Model):
     )
 
     observaciones = models.TextField(max_length=100) #observaciones que se quieran agregar al alquiler
+
+
+    class Meta: #es para que el nombre en el panel de admin este bien escrito
+        verbose_name = "rental"
+        verbose_name_plural = "rentals"
+
+    def __str__(self): #es para que en el panel de admin se muestre el estado de alquiler
+        return self.estado_alquiler

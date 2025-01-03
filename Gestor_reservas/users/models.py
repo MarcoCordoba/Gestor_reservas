@@ -13,3 +13,9 @@ class users(models.Model):
     nombre_usuario = models.CharField(max_length=20, unique=True)
     contraseña = models.CharField(max_length=20)
 
+    class Meta: #es para que el nombre en el panel de admin este bien escrito
+        verbose_name = "user"
+        verbose_name_plural = "users"
+
+    def __str__ (self):
+        return self.nombre_usuario
