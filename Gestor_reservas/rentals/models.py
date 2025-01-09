@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class rentals(models.Model):
+class Rentals(models.Model):
 
     fecha_ingreso = models.DateField() #fecha de ingreso a la propiedad
     fecha_egreso = models.DateField() #fecha de egreso de la propiedad

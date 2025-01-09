@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .serializers import TenantsSerializer
+from .models import Tenants
 
-# Create your views here.
+class TenantsView(viewsets.ModelViewSet):
+    serializer_class = TenantsSerializer
+    queryset = Tenants.objects.all()

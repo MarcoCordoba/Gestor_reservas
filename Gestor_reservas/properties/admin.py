@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import properties
+from .models import Properties
 
 
 # Register your models here.
 
-admin.site.register(properties) #es para que se pueda ver en el panel de admin de django 
+admin.site.register(Properties) #es para que se pueda ver en el panel de admin de django 

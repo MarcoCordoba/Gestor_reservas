@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class properties(models.Model):
+class Properties(models.Model):
     
     nombre = models.CharField(max_length=30) #nombre identificativo para la propiedad
     calle = models.CharField(max_length=30) #calle donde se ubica la propiedad 

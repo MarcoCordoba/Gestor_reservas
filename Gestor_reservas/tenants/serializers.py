@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Tenant
+from .models import Tenants
 
-class TenantSerializer(serializers.ModelSerializer):
+class TenantsSerializer(serializers.ModelSerializer):
     class meta:
-        model = 'Tenant'
+        model = Tenants
         fields  = '__all__'
         
